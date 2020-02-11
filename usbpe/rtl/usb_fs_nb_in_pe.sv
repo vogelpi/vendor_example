@@ -11,7 +11,7 @@
 // this version contains no packet buffers
 
 module usb_fs_nb_in_pe #(
-  parameter logic [4:0] NumInEps = 11,
+  parameter logic [4:0] NumInEps = 12,
   parameter int unsigned MaxInPktSizeByte = 32,
   parameter int unsigned PktW = $clog2(MaxInPktSizeByte),
   parameter int unsigned InEpW = $clog2(NumInEps)
@@ -90,6 +90,7 @@ module usb_fs_nb_in_pe #(
   state_in_e  in_xfr_state_next;
 
   logic in_xfr_end;
+  // my comment
 
   assign in_ep_acked_o = in_xfr_end;
 
