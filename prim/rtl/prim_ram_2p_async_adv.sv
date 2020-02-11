@@ -69,6 +69,8 @@ module prim_ram_2p_async_adv #(
                              (Width <= 120) ? 8 : 8 ;
   localparam int TotalWidth = Width + ParWidth;
 
+  // Less secret change
+
   logic                  a_req_q,    a_req_d ;
   logic                  a_write_q,  a_write_d ;
   logic [SramAw-1:0]     a_addr_q,   a_addr_d ;
