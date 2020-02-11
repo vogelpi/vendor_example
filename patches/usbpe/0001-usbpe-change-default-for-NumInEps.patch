@@ -1,0 +1,24 @@
+From be27737a2ecad2c36f26b86e22737e63f95e5d63 Mon Sep 17 00:00:00 2001
+From: Pirmin Vogel <vogelpi@lowrisc.org>
+Date: Tue, 11 Feb 2020 17:24:53 +0100
+Subject: [PATCH 1/5] [usbpe] change default for NumInEps
+
+This is an example commit. We want to port that back to OT.
+
+Signed-off-by: Pirmin Vogel <vogelpi@lowrisc.org>
+
+diff --git a/hw/ip/usb_fs_nb_pe/rtl/usb_fs_nb_in_pe.sv b/hw/ip/usb_fs_nb_pe/rtl/usb_fs_nb_in_pe.sv
+index 93d013e..bc6f1a1 100644
+--- a/hw/ip/usb_fs_nb_pe/rtl/usb_fs_nb_in_pe.sv
++++ b/hw/ip/usb_fs_nb_pe/rtl/usb_fs_nb_in_pe.sv
+@@ -90,6 +90,7 @@ module usb_fs_nb_in_pe #(
+   state_in_e  in_xfr_state_next;
+ 
+   logic in_xfr_end;
++  // my comment
+ 
+   assign in_ep_acked_o = in_xfr_end;
+ 
+-- 
+2.17.1
+
