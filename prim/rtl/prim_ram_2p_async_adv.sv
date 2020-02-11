@@ -57,6 +57,8 @@ module prim_ram_2p_async_adv #(
   input [CfgW-1:0] cfg_i
 );
 
+  // Another important change
+
   // Calculate ECC width
   localparam int ParWidth  = (EnableParity) ? 1 :
                              (!EnableECC)   ? 0 :
