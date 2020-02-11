@@ -1,0 +1,33 @@
+// Copyright lowRISC contributors.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{
+  name: "lowrisc_usbpe",
+  target_dir: "usbpe",
+
+  upstream: {
+    url: "https://github.com/lowRISC/OpenTitan.git",
+    rev: "master",
+    only_subdir: "hw/ip/usb_fs_nb_pe",
+  },
+
+  // Optional: Apply patches from the following directory to the upstream
+  // sources
+  patch_dir: "patches/usbpe",
+
+  // Optional: Update patches in |patch_dir| from a Git repository
+  // If util/vendor is run with --refresh-patches, all commits in the repository
+  // at |url| between |rev_base| and |rev_patched| are exported into the
+  // |patch_dir|, replacing all existing patches.
+  //patch_repo: {
+  //  url: "git@github.com:lowRISC/riscv-dbg.git",
+  //  rev_base: "pulpissimo_integration",
+  //  rev_patched: "ot",
+  //},
+
+  // Optional: Exclude files or directories from the upstream sources
+  // The standard glob wildcards (*, ?, etc.) are supported
+  exclude_from_upstream: [
+    "*.core",
+  ]
+}
