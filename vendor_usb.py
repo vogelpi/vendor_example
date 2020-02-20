@@ -23,11 +23,10 @@ for ip in ip_list:
 ## $ cd hw/vendor/lowrisc_ibex
 ## $ git format-patch --relative -o /tmp/patches origin/master
 #Example:
-# cd usbpe
-# git format-patch --relative -o ../patches/usbpe/ 4ad0422998e3eab00d34044bbbd4dc971ebbbb2e // commit when we did the last vendor in
+# cd vendor
+# git format-patch --relative -o patches/usbpe/ 266a91df0a0b330c79aee8edf038ac9f899c971a // commit when we did the last vendor in
 # creates one patch per commit since then, patches are empty if not files in current dir affected
-# cd prim
-# git format-patch --relative -o ../patches/usbpe/ 4ad0422998e3eab00d34044bbbd4dc971ebbbb2e // commit when we did the last vendor in
+# adjust paths in patches to OT base
 
 # Import patches (you must have the upstream repo somwhere):
 #$ cd ~/src/upstream
