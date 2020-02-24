@@ -9,7 +9,7 @@
   upstream:
   {
     url: https://github.com/lowRISC/OpenTitan.git
-    rev: 17f60494bd4c515b650d82711ee1ff9a9a979fdd
+    rev: 147c05719c91e6b0653c23ec2cf64e8ac69b44fd
     only_subdir: hw/ip/prim
   }
 }
